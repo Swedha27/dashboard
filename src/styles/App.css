@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .dashboard {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Outer Container - Wider and subtle box shadow */
+  .outer-container {
+    width: 80%;  /* 80% width of the viewport */
+    max-width: 1200px;
+    background: #a57bd5;
+    border-radius: 12px;  /* Slightly more rounded corners */
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    margin: 0 auto;
+  }
+  
+  /* Inner Container - Holds the charts in grid layout */
+  .charts {
+    display: grid;
+    grid-template-columns: 1fr;  /* One chart per row on desktop */
+    gap: 30px;  /* More space between charts */
+    margin-top: 20px;
+  }
+  
+  /* Chart Container - Modern box with increased padding and subtle shadow */
+  .chart-container {
+    margin: 0;
+    padding: 25px;
+    background: #f9f9f9;  /* Light gray background */
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;  /* Make sure it fills available space */
+    max-width: 700px;  /* Consistent width for containers */
+    margin: 0 auto;  /* Center containers */
+    border: 1px solid #ddd;  /* Thin border for better distinction */
+    padding-bottom: 50px;  /* Add space at the bottom to avoid legend overlap */
+  }
+  
+  /* Adjust space for legend */
+  .chart-container .recharts-legend {
+    margin-top: 20px;  /* Adjust the space between chart and legend */
+  }
+  
+  /* For screens smaller than 768px (e.g., tablets and phones) */
+  @media (max-width: 768px) {
+    .dashboard h1 {
+      font-size: 1.5rem;
+    }
+  
+    .charts {
+      grid-template-columns: 1fr;  /* Stack charts vertically */
+    }
+  
+    .chart-container {
+      width: 100%;  /* Make chart container take full width */
+    }
+  }
+  
