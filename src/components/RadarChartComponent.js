@@ -14,9 +14,9 @@ function RadarChartComponent() {
         <Radar name="Revenue" dataKey="revenue" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6} />
         <Tooltip />
         <Legend
-          layout="horizontal"       // Horizontal legend
-          verticalAlign="bottom"     // Place the legend below the chart
-          align="center"             // Center the legend
+          layout="horizontal"       
+          verticalAlign="bottom"     
+          align="center"             
         />
       </RadarChart>
     </div>
