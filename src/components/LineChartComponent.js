@@ -13,8 +13,8 @@ function LineChartComponent() {
         <YAxis />
         <Tooltip />
         <Legend 
-          layout="horizontal"        // Places the legend horizontally
-          verticalAlign="bottom"      // Aligns the legend below the chart
+          layout="horizontal"        
+          verticalAlign="bottom"      
           align="center"/>
       </LineChart>
     </div>
